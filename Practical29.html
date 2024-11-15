@@ -1,0 +1,24 @@
+<!--JavaScript to find the length of an input string without using built-in functions-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+           function stringLength(input) {
+    let length = 0;
+    for (let i = 0; input[i] !== undefined; i++) {
+        length++;
+    }
+    return length;
+}
+
+const inputString = "HelloWorld";
+const lengthOfString = stringLength(inputString);
+document.write(lengthOfString); 
+    </script>
+</body>
+</html>
