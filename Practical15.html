@@ -1,0 +1,25 @@
+<!--JavaScript Program to Add Key/Value Pair to an Object using both Dot notation and
+Square Bracket Notation-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding keys</title>
+</head>
+<body>
+    <h1>Adding keys</h1>
+    <script>
+        const student={
+            name:'esha',
+            age:20
+        };
+        student.gender="female";//dot notation
+        const semester='Sem';
+        student[semester]=1;//square notation
+        for(let element in student) {
+         document.write(element + " : " + student[element], '<br>');
+        }
+    </script>
+</body>
+</html>
