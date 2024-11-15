@@ -1,0 +1,32 @@
+<!--JavaScript Program to Check if a Key Exists in an Object-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Key finding</title>
+    </head>
+    <body>
+        <script>
+        const details ={
+           name:'esha',
+           semester:1,
+           age:17
+        };
+        for(let i in details) {
+         document.write(i + details[i] + "<br>");
+        }
+        var str=prompt("enter a key");
+        for(let element in details) {
+         if(element==str){
+            var check=element;
+            break;
+         }
+        }
+        const hasKey=check in details;        
+         if(hasKey) {
+            document.write("the key is present");
+         }
+         else
+         document.write("the key is absent");
+    </script>
+    </body>
+</html>
