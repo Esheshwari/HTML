@@ -1,0 +1,23 @@
+<!--JavaScript Program to Sort Words in Alphabetical Order by accepting a sentence as input.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sort Words Alphabetically</title>
+</head>
+<body>
+    <h2>8. Sort Words Alphabetically</h2>
+    <script>
+    // take input
+const string = prompt('Enter a sentence: ');
+// converting to an array
+const words = string.split(' ');
+// sort the array elements
+words.sort();
+// display the sorted words
+document.write('The sorted words are:');
+for (const element of words) {
+  document.write(element);
+}
+</script>
+</body>
+</html>
