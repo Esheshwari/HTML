@@ -1,0 +1,27 @@
+<!--JavaScript Program to Merge Property of Two Objects-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Merge property of two objects</title>
+        <script>
+            
+        function mergeObjects() {
+            let obj1 = { name: "esha", age: 17 };
+            let obj2 = { city: "Disney", occupation: "Data Scientist" };
+
+            // Merging objects using spread operator
+            let mergedObj = { ...obj1, ...obj2 };
+
+            document.getElementById("result").innerHTML = JSON.stringify(mergedObj, null, 2);//json=javascript object notation
+        }
+    </script>
+</head>
+<body>
+    <h2>Merge Properties of Two Objects</h2>
+    <button onclick="mergeObjects()">Merge</button>
+    <pre id="result">
+        </script>
+    </head>
+
+    </body>
+</html>
