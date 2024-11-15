@@ -1,0 +1,23 @@
+<!--JavaScript Program to Count the Number of Vowels in a String using regex. Accept the
+string as input from user.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vowel Counter</title>
+</head>
+<body>
+    <script>
+        function countVowel(str) { 
+// find the count of vowels
+const count = str.match(/[aeiouAEIOU]/gi).length;
+// return number of vowels
+return count;
+}
+// take input
+const string = prompt('Enter a string: ');
+const result = countVowel(string);
+document.write(result);
+    </script>
+</body>
+</html>
+
