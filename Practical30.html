@@ -1,0 +1,34 @@
+<!--JavaScript switch...case Statement by considering the use case of traffic light to be red,
+yellow, green or default cases-->
+<!doctype html>
+<html>
+    <head>
+        <title>Traffic Light</title>
+    </head>
+    <body>
+        <script>
+            function checktrafficlight(){
+            let light=document.getElementById("Input Light").value.toLowerCase();//remember this sh**t
+
+           switch(light)
+           {
+            case "red":
+                document.getElementById("result").innerHTML="Stop";
+                break;
+            case "yellow":
+                document.getElementById("result").innerHTML="Caution";
+                break;
+            case "green":
+                document.getElementById("result").innerHTML="Go";
+                break;
+            default:
+                document.getElementById("result").innerHTML="Invalid";
+           }
+            }
+        </script>
+        <label for="Input Light">Traffic Light</label>
+        <input type="text" id="Input Light" placeholder="Enter traffic light"/><!--id=let get elementById-->
+        <button onclick="checktrafficlight()">Check</button><!--function calling-->
+        <p id="result"></p>
+    </body>
+</html>
