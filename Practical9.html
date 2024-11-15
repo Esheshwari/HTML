@@ -1,0 +1,21 @@
+<!--JavaScript Program to Check Whether a String Contains a Substring. Accept both the
+strings as input from user.-->
+<!DOCTYPE html>
+    <html>
+        <head>
+        <title>Check Substring</title>
+        </head>
+        <body>
+           <script>
+            const str = prompt('Enter a string:');
+const checkString = prompt('Enter a string that you want to check:');
+
+// check if string contains a substring
+if(str.includes(checkString)) {
+    document.write(`The string contains ${checkString}`);
+} else {
+    document.write(`The string does not contain ${checkString}`);
+}
+           </script>
+        </body>
+    </html>
