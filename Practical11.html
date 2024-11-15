@@ -1,0 +1,30 @@
+<!--JavaScript Program to Check Whether a String Starts and Ends With Certain Characters-->
+<!DOCTYPE html>
+    <html>
+        <head>
+        <title>Check Substring</title>
+        </head>
+        <body>
+           <script>
+function checkString(str) {
+
+    // check if the string starts with S and ends with G
+    if(str.startsWith('S') && str.endsWith('G')) {
+        document.write('The string starts with S and ends with G');
+    }
+    else if(str.startsWith('S')) {
+        document.write('The string starts with S but does not end with G');
+    }
+     else if(str.endsWith('G')) {
+        document.write('The string starts does not with S but end with G');
+    }
+    else {
+        document.write('The string does not start with S and does not end with G');
+    }
+}
+// take input
+let string = prompt('Enter a string: ');
+checkString(string);
+</script>
+</body>
+</html>
