@@ -1,0 +1,39 @@
+<!--JavaScript Program to Create a student Object using new operator with name, usn,
+semester, marks in 3 subjects and display the type of student and values of all properties.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>students</title>
+
+        <style >
+            p{
+                font-size:medium ;
+                font-family:Georgia, 'Times New Roman', Times, serif        
+            }
+
+        </style>
+    </head>
+ <body>
+      <h1> STUDENT DETAILS </h1>
+      <p id="demo"></p>
+        <script>
+            let x=95;
+            let  y=90;
+             let z=100;
+           total_marks = x+y+z;
+  
+            const student_details =
+            {
+            name: "esha",
+            usn: "###",
+            semester: "1",
+            };
+document.getElementById("demo").innerHTML = "Name of the student =" + student_details.name + "<br>" + "student USN =  " + student_details.usn + "<br>" + "current semester =" + student_details.semester+ 
+"<br> "+  "<br> " + "marks of subject 1=" +x +"<br>" + "marks of subject 2=" +y +"<br>" + 
+"marks of subject 3=" + z +"<br>" + "<br>" +" total marks = " +total_marks;
+            
+
+        </script>
+
+    </body>
+</html>
