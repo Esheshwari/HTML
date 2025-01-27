@@ -1,0 +1,23 @@
+<!--To manipulate the content of HTML elements-->
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM manipulation</title>
+        <style>
+            body{
+                font-family:Arial, sans-serif;
+                padding:20px;
+            }
+        </style>
+    </head>
+    <body>
+    <h1 id="title">Hello World</h1>
+    <button onclick="changeText()">Change Text</button>
+    <script>
+    function changeText() {
+    document.getElementById('title').innerText = "Text Changed!";
+    }
+    </script>
+    </body>
+    </html>

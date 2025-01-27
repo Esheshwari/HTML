@@ -1,0 +1,50 @@
+<!--Create an interaction form that validates user input-->
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Interactive Form</title>
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            }
+            input {
+            margin-bottom: 10px;
+            padding: 10px;
+            }
+            .error {
+            color: red;
+            }
+            </style>
+            </head>
+           <body>
+            <h1>Interactive Form</h1>
+            <form onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+            <input type="submit" value="Submit">
+            <p id="error-message" class="error"></p>
+        </form>
+        <script>
+        function validateForm() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var errorMessage = "";
+        if (name === "") {
+        errorMessage += "Name is required.<br>";
+        }
+        if (email === "") {
+        errorMessage += "Email is required.";
+        }
+        if (errorMessage) {
+        document.getElementById('error-message').innerHTML = errorMessage;
+        return false;
+        }
+        return true;
+        }
+        </script>
+        </body>
+        </html>

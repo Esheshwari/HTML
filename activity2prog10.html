@@ -1,0 +1,46 @@
+<!--change color when mouseover the area-->
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM manipulation</title>
+        <style>
+            body{
+                font-family:Arial, sans-serif;
+                padding:20px;
+            }
+            input, select, button {
+            margin: 5px;
+            padding: 10px;
+            color:#45a049;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;}
+            h1{
+                background-color:crimson;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="title">Hello World</h1>
+        <button onclick="changeText()">Change Text</button>
+        <script>
+        function changeText() {
+        document.getElementById('title').innerText = "Text Changed!";
+        }document.body.addEventListener('mouseover', function() {
+            document.body.style.backgroundColor = "lightblue";
+        });
+
+        document.body.addEventListener('mouseout', function() {
+            document.body.style.backgroundColor = "blue";
+        });
+        </script>
+        </body>
+        </html>
+
